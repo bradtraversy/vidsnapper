@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>VidSnapper</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="navbar">
-    <h1>VidSnapper</h1>
-  </div>
-  <div class="top-container">
-    <video id="video">Stream not available...</video>
-    <button id="photo-button" class="btn btn-dark">
-      Take Photo
-    </button>
-    <select id="photo-filter" class="select">
-      <option value="none">Normal</option>
-      <option value="grayscale(100%)">Grayscale</option>
-      <option value="sepia(100%)">Sepia</option>
-      <option value="invert(100%)">Invert</option>
-      <option value="hue-rotate(90deg)">Hue</option>
-      <option value="blur(10px)">Blur</option>
-      <option value="contrast(200%)">Contrast</option>
-    </select>
-    <button id="clear-button" class="btn btn-light">Clear</button>
-    <canvas id="canvas"></canvas>
-  </div>
-  <div class="bottom-container">
-    <div id="photos"></div>
-  </div>
-
-  <script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VidSnapper</title>
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><i class="fa-solid fa-video"></i> VidSnapper</h1>
+    </header>
+    <div class="top-container">
+      <video id="video">Stream not available...</video>
+      <button id="photo-button" class="btn btn-dark">
+        <i class="fa-solid fa-camera"></i> Take Photo
+      </button>
+      <select id="photo-filter" class="select">
+        <option value="none">Normal</option>
+        <option value="grayscale(100%)">Grayscale</option>
+        <option value="sepia(100%)">Sepia</option>
+        <option value="invert(100%)">Invert</option>
+        <option value="hue-rotate(90deg)">Hue</option>
+        <option value="blur(10px)">Blur</option>
+        <option value="contrast(200%)">Contrast</option>
+      </select>
+      <button id="clear-button" class="btn btn-light">Clear</button>
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="bottom-container">
+      <div id="photos"></div>
+    </div>
+  </body>
 </html>

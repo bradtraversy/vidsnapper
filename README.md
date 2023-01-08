@@ -2,6 +2,7 @@
 
 > Webcam filter and picture app built on WebRTC getUserMedia and canvas
 
+<img src="img/screen.png" width="600">
 
 ## App Info
 
@@ -12,7 +13,7 @@ Brad Traversy
 
 ### Version
 
-1.0.0
+1.0.1
 
 ### License
 
